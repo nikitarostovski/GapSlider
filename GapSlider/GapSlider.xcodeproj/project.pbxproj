@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1113D8DA2369AE0000E4BE4F /* GapSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 1113D8D82369AE0000E4BE4F /* GapSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1113D90D2369AEF700E4BE4F /* GapSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D90B2369AEF700E4BE4F /* GapSlider.swift */; };
+		1113D9132369D9A500E4BE4F /* GapSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D9122369D9A500E4BE4F /* GapSliderDelegate.swift */; };
+		1113D9152369DA2500E4BE4F /* ThumbHitTestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D9142369DA2500E4BE4F /* ThumbHitTestResult.swift */; };
+		1113D9172369DC8500E4BE4F /* LeftThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D9162369DC8500E4BE4F /* LeftThumb.swift */; };
+		1113D9192369DC9F00E4BE4F /* RightThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D9182369DC9F00E4BE4F /* RightThumb.swift */; };
+		1113D91B2369DCA700E4BE4F /* CenterThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D91A2369DCA700E4BE4F /* CenterThumb.swift */; };
+		1113D91D2369DD9500E4BE4F /* GapSliderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1113D91C2369DD9500E4BE4F /* GapSliderStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1113D8D52369AE0000E4BE4F /* GapSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GapSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1113D8D82369AE0000E4BE4F /* GapSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GapSlider.h; sourceTree = "<group>"; };
 		1113D8D92369AE0000E4BE4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1113D90B2369AEF700E4BE4F /* GapSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GapSlider.swift; sourceTree = "<group>"; };
+		1113D9122369D9A500E4BE4F /* GapSliderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapSliderDelegate.swift; sourceTree = "<group>"; };
+		1113D9142369DA2500E4BE4F /* ThumbHitTestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbHitTestResult.swift; sourceTree = "<group>"; };
+		1113D9162369DC8500E4BE4F /* LeftThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftThumb.swift; sourceTree = "<group>"; };
+		1113D9182369DC9F00E4BE4F /* RightThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightThumb.swift; sourceTree = "<group>"; };
+		1113D91A2369DCA700E4BE4F /* CenterThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterThumb.swift; sourceTree = "<group>"; };
+		1113D91C2369DD9500E4BE4F /* GapSliderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GapSliderStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +60,15 @@
 		1113D8D72369AE0000E4BE4F /* GapSlider */ = {
 			isa = PBXGroup;
 			children = (
-				1113D8D82369AE0000E4BE4F /* GapSlider.h */,
 				1113D8D92369AE0000E4BE4F /* Info.plist */,
+				1113D8D82369AE0000E4BE4F /* GapSlider.h */,
+				1113D9122369D9A500E4BE4F /* GapSliderDelegate.swift */,
+				1113D90B2369AEF700E4BE4F /* GapSlider.swift */,
+				1113D9142369DA2500E4BE4F /* ThumbHitTestResult.swift */,
+				1113D9162369DC8500E4BE4F /* LeftThumb.swift */,
+				1113D9182369DC9F00E4BE4F /* RightThumb.swift */,
+				1113D91A2369DCA700E4BE4F /* CenterThumb.swift */,
+				1113D91C2369DD9500E4BE4F /* GapSliderStyle.swift */,
 			);
 			path = GapSlider;
 			sourceTree = "<group>";
@@ -94,6 +115,7 @@
 				TargetAttributes = {
 					1113D8D42369AE0000E4BE4F = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -130,6 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1113D9132369D9A500E4BE4F /* GapSliderDelegate.swift in Sources */,
+				1113D9192369DC9F00E4BE4F /* RightThumb.swift in Sources */,
+				1113D91D2369DD9500E4BE4F /* GapSliderStyle.swift in Sources */,
+				1113D9172369DC8500E4BE4F /* LeftThumb.swift in Sources */,
+				1113D91B2369DCA700E4BE4F /* CenterThumb.swift in Sources */,
+				1113D90D2369AEF700E4BE4F /* GapSlider.swift in Sources */,
+				1113D9152369DA2500E4BE4F /* ThumbHitTestResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +288,7 @@
 		1113D8DE2369AE0000E4BE4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DZU58EZPK;
@@ -275,6 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "-.GapSlider";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +314,7 @@
 		1113D8DF2369AE0000E4BE4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DZU58EZPK;
